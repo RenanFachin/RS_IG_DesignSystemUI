@@ -9,6 +9,13 @@ export default {
     src: 'https://github.com/RenanFachin.png',
     alt: 'Renan Fachin',
   },
+  argTypes: {
+    src: {
+      control: {
+        type: 'text',
+      },
+    },
+  },
 } as Meta<AvatarProps>
 
 // Variações
