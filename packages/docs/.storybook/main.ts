@@ -25,5 +25,12 @@ const config: StorybookConfig = {
   docs: {
     autodocs: true,
   },
+  viteFinal: (config, { configType }) => {
+    if (configType === 'PRODUCTION') {
+      config.base = '/RS_IG_DesignSystemUI/'
+    }
+
+    return config
+  }
 };
 export default config;
